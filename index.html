@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Project</title>
+
+  <!-- P5.js library from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js"></script>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    .custom-link {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    /* Custom CSS that was not covered in class */
+    .blur {
+      filter: blur(5px);
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-100 max-w-screen-md mx-auto p-6">
+  <nav class="bg-gray-800 px-4 py-3 mb-6 rounded">
+    <div class="flex justify-between items-center">
+      <div>
+        <a href="#" class="text-white hover:text-gray-300 mr-6">Home</a>
+        <a href="https://www.example.com" target="_blank" class="text-white hover:text-gray-300 mr-6">External Link</a>
+        <a href="#assignments" class="text-white hover:text-gray-300 mr-6 custom-link">Assignments</a>
+        <a href="#labs" class="text-white hover:text-gray-300 custom-link">Labs</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="bg-white p-6 rounded shadow mb-6">
+    <h1 class="text-2xl font-bold mb-4">Welcome to My Web Development Project</h1>
+    <p>This is a demonstration of various HTML elements, P5.js integration, and custom CSS.</p>
+    <div class="grid grid-cols-2 gap-4">
+      <img src="image1.jpg" alt="Sample image 1" class="rounded">
+      <img src="image2.jpg" alt="Sample image 2" class="rounded blur">
+      <img src="image3.jpg" alt="Sample image 3" class="rounded">
+      <img src="image4.jpg" alt="Sample image 4" class="rounded">
+    </div>
+  </div>
+
+  <div class="bg-white p-6 rounded shadow mb-6" id="assignments">
+    <h2 class="text-xl font-bold mb-4">Future Assignments</h2>
+    <ul class="space-y-2">
+      <li><a href="assignment2.html" class="custom-link">Assignment 2</a></li>
+      <li><a href="assignment3.html" class="custom-link">Assignment 3</a></li>
+      <li><a href="assignment4.html" class="custom-link">Assignment 4</a></li>
+      <li><a href="assignment5.html" class="custom-link">Assignment 5</a></li>
+      <li><a href="final-project.html" class="custom-link">Final Project</a></li>
+    </ul>
+  </div>
+
+  <div class="bg-white p-6 rounded shadow mb-6" id="labs">
+    <h2 class="text-xl font-bold mb-4">Labs</h2>
+    <ul class="space-y-2">
+      <li><a href="./pattern.html" class="custom-link">Lab 1 This my lab1 pattern</a></li>
+      <li><a href="lab2.html" class="custom-link">Lab 2</a></li>
+      <li><a href="lab3.html" class="custom-link">Lab 3</a></li>
+      <li><a href="lab4.html" class="custom-link">Lab 4</a></li>
+      <li><a href="lab5.html" class="custom-link">Lab 5</a></li>
+    </ul>
+  </div>
+
+  <div class="bg-white p-6 rounded shadow mb-6">
+    <h2 class="text-xl font-bold mb-4">P5.js Animation</h2>
+    <div id="sketch-holder"></div>
+    <script src="p5.js"></script>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
