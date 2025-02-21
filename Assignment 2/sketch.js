@@ -1,14 +1,14 @@
-// https://p5js.org/reference/#/p5.Element - P5.js DOM Manipulation tutorial
+// https://p5js.org/reference/#/p5.Element - P5.js Drawing and UI tutorial
 
 let strokeWeightSlider;
 let colorPicker;
 let clearButton;
 
 function setup() {
-    createCanvas(720, 400);
-    background(50);
+    createCanvas(600, 400);
+    background(220);
 
-    // Create slider for stroke weight (range 1 to 10, default 5)
+    // Create slider for stroke weight
     strokeWeightSlider = createSlider(1, 10, 5);
     strokeWeightSlider.position(20, 420);
     
@@ -33,7 +33,7 @@ function draw() {
 
 // Function to clear the canvas when button is clicked
 function clearCanvas() {
-    background(50);
+    background(220);
 }
 
 // Function to clear the canvas when "C" key is pressed
