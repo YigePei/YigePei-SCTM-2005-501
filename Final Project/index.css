@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: rgba(112, 69, 53, 1.0);
+    padding: 10px 20px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.menu li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: rgba(229, 198, 174, 1.0);
+    padding: 20px;
+}
+
+.indexGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 60px;
+    background-color: rgba(229, 198, 174, 1.0);
+}
+
+.indexGrid div {
+    overflow: hidden;
+}
+
+.indexGrid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+}
+
+.indexGrid div:hover img {
+    transform: scale(1.2);
+}
+
+.scrollbox {
+    overflow: hidden;
+    background-color: rgba(166, 135, 64, 1.0);
+    padding: 20px;
+}
+
+.about {
+    text-align: center;
+    background-color: rgba(112, 69, 53, 1.0);
+    color: rgba(195, 139, 94, 1.0);
+    padding: 20px;
+}
+
+.gridBottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: rgba(112, 69, 53, 1.0);
+}
+
+.bottom {
+    background-color: #ccb562;
+    text-align: center;
+    padding: 20px;
+}
